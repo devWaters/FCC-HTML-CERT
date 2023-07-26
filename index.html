@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey</title>
+  </head>
+    <body>
+
+    
+        
+      <h1 class="header" id="title">Judgement</h1>
+      <p class="header" id="description">Was it worth it?</p>
+      
+      
+  <div class="panel">
+      <form id="survey-form">
+        
+        <fieldset class="info1">
+        <label id="name-label">
+          What do I call you?
+          <input type="text" for="name" placeholder=" Your parents named you that?" required id="name">
+          </input>
+          </label>
+        
+
+        <div>
+        <label id="email-label">
+          Where does your mail go?
+          <input required type="email" placeholder="Check your spam folder" id="email">
+          </input>
+          </label">
+        <div/>
+
+        <div>
+        <label id="number-label">
+          How long have you been here?
+          <input type="number" id="number" min="6" max="666" placeholder=" Aren't you too old?" for="number">
+          </input>
+          </label>
+          <div/>
+
+          <div>
+          <label id="dropdown-label">How did you get here?
+            <select id="dropdown">
+              <option value="">I think it was...</option>
+              <option value="1"> It came to me in a dream</option>
+              <option value="2"><i>They</i> told me...</option>
+              <option value="3">The doctors</option>
+              </select>
+          
+          </label>
+
+
+          </fieldset>
+          <fieldset>
+            <label id="choice-label">What's your favorite thing?</label>
+            <div/>
+            <input value=" " type=radio name="choice" id="pain">Pain</input>
+            <div/>
+            <input value="1" type=radio name="choice" id="sweet">Sweet</input>
+            <div/>
+            <input value="2" type=radio name="choice" id="cold">Cold</input>
+            <div/>
+            <input value="3" type=radio name="choice" id="sour">Sour</input>
+            <div/>
+            <input value="4" type=radio name="choice" id="hope">Hope</input>
+            </fieldset>
+
+          <fieldset>
+            <label>
+              What do they deserve? (the more the merrier)
+              </label>
+              <div/>
+              <input value=" " type=checkbox name="punishment" id="pain">Pain</input>
+              <div/>
+              <input value="1" type="checkbox" name="punishment" id="pain">Pain</input><div/>
+              <input value="2" type=checkbox name="punishment" id="pain">Pain</input>
+              <div/>
+              <input value="3" type="checkbox" name="punishment" id="pain">Pain</input>
+
+            </fieldset>
+            <fieldset>
+              <label>Please, write your note.</label>
+              <div/>
+              <textarea id=note rows="4" cols="40" placeholder="They should know your secrets"></textarea>
+              </fieldset>
+
+            <input id="submit" type="submit" value="Get it over with"></input>
+            
+
+
+        </form id="survey-form">
+        </div>
+    </body>
+
+</html>
