@@ -17,32 +17,32 @@
       <form id="survey-form">
         
         <fieldset class="info1">
-        <label id="name-label">
+        <label id="name-label" for="name">
           What do I call you?
-          <input type="text" for="name" placeholder=" Your parents named you that?" required id="name">
+          <input type="text" placeholder=" Your parents named you that?" required id="name" name="name" >
           </input>
           </label>
         
 
-        <div>
-        <label id="email-label">
+        <label for="email" id="email-label">
           Where does your mail go?
-          <input required type="email" placeholder="Check your spam folder" id="email">
-          </input>
-          </label">
-        <div/>
-
-        <div>
-        <label id="number-label">
-          How long have you been here?
-          <input type="number" id="number" min="6" max="666" placeholder=" Aren't you too old?" for="number">
+          <input required type="email" placeholder="Check your spam folder" id="email" name="email">
           </input>
           </label>
-          <div/>
+        
 
-          <div>
-          <label id="dropdown-label">How did you get here?
-            <select id="dropdown">
+        
+        <label for="number" id="number-label">
+          How long have you been here?
+          <input type="number" min="6" max="666" placeholder=" Aren't you too old?" id="number" name="number">
+        
+          </input>
+          </label>
+         
+
+          
+          <label for="dropdown" id="dropdown-label">How did you get here?
+            <select name="dropdown" id="dropdown">
               <option value="">I think it was...</option>
               <option value="1"> It came to me in a dream</option>
               <option value="2"><i>They</i> told me...</option>
@@ -50,48 +50,69 @@
               </select>
           
           </label>
-
-
           </fieldset>
           <fieldset>
-            <label id="choice-label">What's your favorite thing?</label>
-            <div/>
-            <input value=" " type=radio name="choice" id="pain">Pain</input>
-            <div/>
-            <input value="1" type=radio name="choice" id="sweet">Sweet</input>
-            <div/>
-            <input value="2" type=radio name="choice" id="cold">Cold</input>
-            <div/>
-            <input value="3" type=radio name="choice" id="sour">Sour</input>
-            <div/>
-            <input value="4" type=radio name="choice" id="hope">Hope</input>
+            
+            <label for="choice-label">
+            What's your favorite thing?
+            </label>
+            <br>
+            <br>
+            
+          
+            <input name="choicePain" id="choicePain" class="choice" type="radio" value="1">Pain
+            <br>
+            
+            <input name="choicePain" id="choiceCold" class="choice" type="radio" value="1">Cold
+             <br>
+            
+            <input name="choicePain" id="choiceSour" class="choice" type="radio" value="1">Sour
+             <br>
+            
+            <input name="choicePain" id="choiceSweet" class="choice" type="radio" value="1">Sweet
+             <br>
+            
+            <input name="choicePain" id="choiceHope" class="choice" type="radio" value="1">Hope
+             <br>
+           
+            <input name="choicePain" id="choiceLife" class="choice" type="radio" value="1">Life
+
+            </label>
             </fieldset>
 
+
           <fieldset>
-            <label>
+            <label id="punishment-label">
               What do they deserve? (the more the merrier)
+              
+              <br>
+              <br>
+              <input value=" " type=checkbox name="punishment" id="pain1" class="choice">Pain
+              <br>
+            <input value="1" type="checkbox" name="punishment" id="pain2" class="choice">Pain
+<br>
+              <input value="2" type=checkbox name="punishment" id="pain3" class="choice">Pain
+<br>
+              <input value="3" type="checkbox" name="punishment" id="pain4" class="choice">Pain
               </label>
-              <div/>
-              <input value=" " type=checkbox name="punishment" id="pain">Pain</input>
-              <div/>
-              <input value="1" type="checkbox" name="punishment" id="pain">Pain</input><div/>
-              <input value="2" type=checkbox name="punishment" id="pain">Pain</input>
-              <div/>
-              <input value="3" type="checkbox" name="punishment" id="pain">Pain</input>
+
 
             </fieldset>
             <fieldset>
-              <label>Please, write your note.</label>
-              <div/>
+              <label id="note">Please, write your note.</label>  
               <textarea id=note rows="4" cols="40" placeholder="They should know your secrets"></textarea>
               </fieldset>
 
             <input id="submit" type="submit" value="Get it over with"></input>
+
+            <h6>thanks for playing<h6/>
             
 
 
         </form id="survey-form">
         </div>
+       
     </body>
+    
 
 </html>
